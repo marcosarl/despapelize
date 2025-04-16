@@ -2,126 +2,120 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Consultoria paperless para transformar processos em empresas e eliminar o uso de papel.">
-    <title>Despapelize - Transforme sua empresa</title>
+    <title>Despapelize</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
-            color: #333;
         }
+
         header {
-            background-color: #2E7D32;
+            background-color: #0B1E2D;
             color: white;
-            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .logo-container span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FDC300;
+        }
+
+        .main {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 20px;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section h2 {
-            font-size: 24px;
+
+        h1 {
             color: #2E7D32;
         }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
         .button {
             background-color: #2E7D32;
             color: white;
-            padding: 10px 20px;
-            text-decoration: none;
+            padding: 15px 30px;
+            border: none;
             border-radius: 5px;
-            font-weight: bold;
+            font-size: 18px;
+            margin-top: 25px;
+            text-decoration: none;
             display: inline-block;
-            margin-top: 20px;
         }
+
+        .button:hover {
+            background-color: #1B5E20;
+        }
+
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
             padding: 20px;
+            background-color: #eee;
+            color: #333;
+            margin-top: 80px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="logo.png" alt="Logo Despapelize" style="height: 80px;">
-    <h1>Despapelize</h1>
-    <p>Transforme processos. Elimine o papel.</p>
-    <a href="mailto:contato@despapelize.com.br" class="button">Quero Despapelizar minha empresa</a>
-</header>
+    <header>
+        <div class="logo-container">
+            <img src="41b9fbbe-3745-4af0-be88-6c301585d45a.png" alt="Logo Despapelize">
+            <span>Despapelize</span>
+        </div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">Diagnóstico</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
 
-<div class="container">
-    <section class="section">
-        <h2>O que é a Despapelize?</h2>
-        <p>Somos uma consultoria especializada em transformar processos manuais em fluxos digitais. Ajudamos empresas a eliminar o uso excessivo de papel com soluções simples, acessíveis e sob medida para o seu negócio.</p>
-    </section>
+    <div class="main">
+        <h1>Transforme processos. Elimine o papel.</h1>
+        <p>Consultoria + Implantação Paperless para empresas que querem evoluir com eficiência digital e organização.</p>
+        <a href="https://wa.me/5511964678773" class="button" target="_blank">Solicitar diagnóstico gratuito</a>
+    </div>
 
-    <section class="section">
-        <h2>Como funciona?</h2>
-        <ol>
-            <li><strong>Diagnóstico gratuito</strong> - Avaliamos os processos que ainda dependem de papel.</li>
-            <li><strong>Plano personalizado</strong> - Criamos um plano de digitalização e automação.</li>
-            <li><strong>Implantação completa</strong> - Aplicamos ferramentas digitais e treinamos sua equipe.</li>
-            <li><strong>Acompanhamento e suporte</strong> - Garantimos que o novo processo funcione de verdade.</li>
-        </ol>
-    </section>
-
-    <section class="section">
-        <h2>Serviços oferecidos</h2>
-        <ul>
-            <li>Eliminação da papelada e digitalização inteligente</li>
-            <li>Implantação de GEDs e formulários digitais</li>
-            <li>Automação de processos com ferramentas no-code</li>
-            <li>Assinaturas eletrônicas com validade jurídica</li>
-            <li>Treinamento e capacitação da equipe</li>
-            <li>Conformidade com a LGPD</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Para quem é?</h2>
-        <ul>
-            <li>Escritórios jurídicos</li>
-            <li>Clínicas e consultórios</li>
-            <li>Empresas de RH</li>
-            <li>Setores administrativos e financeiros</li>
-            <li>Qualquer empresa que ainda imprime tudo!</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Benefícios</h2>
-        <ul>
-            <li>Redução de custos com papel, impressão e armazenamento</li>
-            <li>Acesso rápido e seguro à informação</li>
-            <li>Processos mais ágeis e organizados</li>
-            <li>Menos burocracia e mais eficiência</li>
-            <li>Adequação à LGPD</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Vamos conversar?</h2>
-        <p>Quer saber como digitalizar sua empresa sem complicação? Fale com a gente e receba um diagnóstico gratuito.</p>
-        <a href="https://wa.me/5511964678773?text=Olá!%20Quero%20solicitar%20o%20diagnóstico%20gratuito%20para%20transformar%20meu%20processo%20em%20digital." class="button">Solicitar diagnóstico gratuito</a>
-    </section>
-</div>
-
-<footer>
-    <p>© 2025 Despapelize • Consultoria Paperless</p>
-    <p>CNPJ 00.000.000/0001-00</p>
-</footer>
+    <footer>
+        © 2025 Despapelize. Todos os direitos reservados.
+    </footer>
 
 </body>
 </html>
+
+
