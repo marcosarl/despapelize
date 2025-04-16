@@ -17,15 +17,33 @@
             padding: 20px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between; /* Espaço entre logo e navegação */
         }
-        header img {
-            max-height: 80px;
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            max-height: 60px;
             margin-right: 20px;
         }
-        header h1 {
+        header .logo h1 {
             margin: 0;
             font-size: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
         }
         .container {
             padding: 40px 20px;
@@ -56,76 +74,114 @@
             display: inline-block;
             margin-top: 20px;
         }
+
+        /* Estilos adicionais para melhor visualização da navegação */
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-<header id="inicio">
-    <img src="logo.png" alt="Logo Despapelize">
-    <h1>Despapelize</h1>
-</header>
+    <header id="inicio">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Despapelize">
+            <h1>Despapelize</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#nossos-servicos">Nossos serviços</a></li>
+                <li><a href="#casos-de-sucesso">Casos de sucesso</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="container">
-<section class="section" id="quem-somos">
-    <h2>O que é a Despapelize?</h2>
-    <p>Somos uma consultoria especializada em transformar processos manuais em fluxos digitais. Ajudamos empresas a eliminar o uso excessivo de papel com soluções simples, acessíveis e sob medida para o seu negócio.</p>
-    <p><strong>🔍 Diagnóstico → 📄 Digitalização → 🧠 Automação → 📈 Resultados</strong></p>
-</section>
+    <div class="container">
+        <section class="section" id="quem-somos">
+            <h2>O que é a Despapelize?</h2>
+            <p>Somos uma consultoria especializada em transformar processos manuais em fluxos digitais. Ajudamos empresas a eliminar o uso excessivo de papel com soluções simples, acessíveis e sob medida para o seu negócio.</p>
+            <p><strong>🔍 Diagnóstico → 📄 Digitalização → 🧠 Automação → 📈 Resultados</strong></p>
+        </section>
 
-    <section class="section" id="como-funciona">
-        <h2>Como funciona?</h2>
-        <ol>
-            <li><strong>Diagnóstico gratuito</strong> - Avaliamos os processos que ainda dependem de papel.</li>
-            <li><strong>Plano personalizado</strong> - Criamos um plano de digitalização e automação.</li>
-            <li><strong>Implantação completa</strong> - Aplicamos ferramentas digitais e treinamos sua equipe.</li>
-            <li><strong>Acompanhamento e suporte</strong> - Garantimos que o novo processo funcione de verdade.</li>
-        </ol>
-    </section>
+        <section class="section" id="depoimentos">
+            <h2>Depoimentos de Clientes</h2>
+            <p>Aqui você pode incluir depoimentos de clientes satisfeitos com os seus serviços.</p>
+            </section>
 
-    <section class="section" id="servicos">
-        <h2>Serviços oferecidos</h2>
-        <ul>
-            <li>Eliminação da papelada e digitalização inteligente</li>
-            <li>Implantação de GEDs e formulários digitais</li>
-            <li>Automação de processos com ferramentas no-code</li>
-            <li>Assinaturas eletrônicas com validade jurídica</li>
-            <li>Treinamento e capacitação da equipe</li>
-            <li>Conformidade com a LGPD</li>
-        </ul>
-    </section>
+        <section class="section" id="nossos-servicos">
+            <h2>Nossos serviços</h2>
+            <ul>
+                <li>Eliminação da papelada e digitalização inteligente</li>
+                <li>Implantação de GEDs e formulários digitais</li>
+                <li>Automação de processos com ferramentas no-code</li>
+                <li>Assinaturas eletrônicas com validade jurídica</li>
+                <li>Treinamento e capacitação da equipe</li>
+                <li>Conformidade com a LGPD</li>
+            </ul>
+        </section>
 
-    <section class="section" id="para-quem">
-        <h2>Para quem é?</h2>
-        <ul>
-            <li>Escritórios jurídicos</li>
-            <li>Clínicas e consultórios</li>
-            <li>Empresas de RH</li>
-            <li>Setores administrativos e financeiros</li>
-            <li>Qualquer empresa que ainda imprime tudo!</li>
-        </ul>
-    </section>
+        <section class="section" id="casos-de-sucesso">
+            <h2>Casos de Sucesso</h2>
+            <p>Apresente aqui exemplos de empresas que se beneficiaram com a consultoria da Despapelize.</p>
+            </section>
 
-    <section class="section" id="beneficios">
-        <h2>Benefícios</h2>
-        <ul>
-            <li>Redução de custos com papel, impressão e armazenamento</li>
-            <li>Acesso rápido e seguro à informação</li>
-            <li>Processos mais ágeis e organizados</li>
-            <li>Menos burocracia e mais eficiência</li>
-            <li>Adequação à LGPD</li>
-        </ul>
-    </section>
+        <section class="section" id="blog">
+            <h2>Blog</h2>
+            <p>Compartilhe artigos, notícias e dicas sobre transformação digital e como eliminar o papel da sua empresa.</p>
+            </section>
 
-    <section class="section" id="diagnostico">
-        <h2>Solicite um diagnóstico gratuito</h2>
-        <p>Quer saber como a Despapelize pode ajudar sua empresa? Clique no botão abaixo e fale com a gente pelo WhatsApp!</p>
-        <a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Solicitar diagnóstico gratuito</a>
-    </section>
-</div>
+        <section class="section" id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Estamos prontos para ajudar a sua empresa a se tornar paperless. Entre em contato conosco!</p>
+            <p><a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Fale conosco pelo WhatsApp</a></p>
+        </section>
 
-<footer>
-    <p>&copy; 2025 Despapelize - Todos os direitos reservados.</p>
-</footer>
+        <section class="section" id="como-funciona">
+            <h2>Como funciona?</h2>
+            <ol>
+                <li><strong>Diagnóstico gratuito</strong> - Avaliamos os processos que ainda dependem de papel.</li>
+                <li><strong>Plano personalizado</strong> - Criamos um plano de digitalização e automação.</li>
+                <li><strong>Implantação completa</strong> - Aplicamos ferramentas digitais e treinamos sua equipe.</li>
+                <li><strong>Acompanhamento e suporte</strong> - Garantimos que o novo processo funcione de verdade.</li>
+            </ol>
+        </section>
+
+        <section class="section" id="para-quem">
+            <h2>Para quem é?</h2>
+            <ul>
+                <li>Escritórios jurídicos</li>
+                <li>Clínicas e consultórios</li>
+                <li>Empresas de RH</li>
+                <li>Setores administrativos e financeiros</li>
+                <li>Qualquer empresa que ainda imprime tudo!</li>
+            </ul>
+        </section>
+
+        <section class="section" id="beneficios">
+            <h2>Benefícios</h2>
+            <ul>
+                <li>Redução de custos com papel, impressão e armazenamento</li>
+                <li>Acesso rápido e seguro à informação</li>
+                <li>Processos mais ágeis e organizados</li>
+                <li>Menos burocracia e mais eficiência</li>
+                <li>Adequação à LGPD</li>
+            </ul>
+        </section>
+
+        <section class="section" id="diagnostico">
+            <h2>Solicite um diagnóstico gratuito</h2>
+            <p>Quer saber como a Despapelize pode ajudar sua empresa? Clique no botão abaixo e fale com a gente pelo WhatsApp!</p>
+            <a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Solicitar diagnóstico gratuito</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Despapelize - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
