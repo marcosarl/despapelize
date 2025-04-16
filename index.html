@@ -12,32 +12,20 @@
             scroll-behavior: smooth;
         }
         header {
-            background-color: #00796b;
+            background-color: #009688; /* Cor ajustada */
             color: white;
             padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #004d40;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style-type: none;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        header img {
+            max-height: 80px;
+            margin-right: 20px;
+        }
+        header h1 {
             margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
+            font-size: 2rem;
         }
         .container {
             padding: 40px 20px;
@@ -48,19 +36,19 @@
             margin-bottom: 60px;
         }
         h2 {
-            color: #00796b;
+            color: #00796b; /* Cor ajustada */
         }
         ul, ol {
             padding-left: 20px;
         }
         footer {
-            background-color: #004d40;
+            background-color: #004d40; /* Cor ajustada */
             color: white;
             text-align: center;
             padding: 20px;
         }
         .cta-button {
-            background-color: #009688;
+            background-color: #00796b; /* Cor ajustada */
             color: white;
             padding: 15px 30px;
             text-decoration: none;
@@ -73,22 +61,12 @@
 <body>
 
 <header id="inicio">
-    <img src="logo.png" alt="Logo Despapelize" style="max-height: 80px;">
+    <img src="logo.png" alt="Logo Despapelize">
     <h1>Despapelize</h1>
     <p>Transforme processos. Elimine o papel.</p>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#como-funciona">Como Funciona</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#para-quem">Para Quem</a></li>
-        <li><a href="#beneficios">Benefícios</a></li>
-        <li><a href="#diagnostico">Diagnóstico</a></li>
-    </ul>
-</nav>
+<!-- Menu removido -->
 
 <div class="container">
     <section class="section" id="quem-somos">
