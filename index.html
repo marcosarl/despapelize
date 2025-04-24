@@ -16,10 +16,47 @@
       color: white;
       padding: 20px;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
     header h1 {
       margin: 0;
       font-size: 2rem;
+      display: flex;
+      align-items: center;
+    }
+    header h1 span {
+      margin-left: 10px;
+      font-size: 1.8rem;
+    }
+    .leaf-icon {
+      width: 24px;
+      height: 24px;
+      background-color: white;
+      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .leaf-icon::before {
+      content: '';
+      position: absolute;
+      background-color: #4CAF50;
+      width: 6px;
+      height: 10px;
+      top: 5px;
+      left: 9px;
+      transform: rotate(45deg);
+    }
+    .leaf-icon::after {
+      content: '';
+      position: absolute;
+      background-color: #4CAF50;
+      width: 10px;
+      height: 6px;
+      top: 0;
+      left: 5px;
     }
     .main {
       display: flex;
@@ -66,7 +103,8 @@
 </head>
 <body>
   <header>
-    <h1>Despapelize</h1>
+    <div class="leaf-icon"></div>
+    <h1>Despapelize <span>- Consultoria Paperless</span></h1>
   </header>
   <div class="main">
     <div class="bloco">
@@ -105,11 +143,6 @@
           <li>Conformidade com a LGPD</li>
         </ul>
       </section>
-      <section class="section" id="diagnostico">
-        <h2>Solicite um diagnóstico gratuito</h2>
-        <p>Quer saber como a Despapelize pode ajudar sua empresa? Clique no botão abaixo e fale com a gente pelo WhatsApp!</p>
-        <a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Solicitar diagnóstico gratuito</a>
-      </section>
     </div>
     <div class="bloco">
       <section class="section" id="beneficios">
@@ -138,6 +171,11 @@
         <h2>Entre em Contato</h2>
         <p>Estamos prontos para ajudar a sua empresa a se tornar paperless. Entre em contato conosco!</p>
         <a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Fale conosco pelo WhatsApp</a>
+      </section>
+      <section class="section" id="diagnostico">
+        <h2>Solicite um diagnóstico gratuito</h2>
+        <p>Quer saber como a Despapelize pode ajudar sua empresa? Clique no botão abaixo e fale com a gente pelo WhatsApp!</p>
+        <a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Solicitar diagnóstico gratuito</a>
       </section>
     </div>
   </div>
