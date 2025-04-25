@@ -24,21 +24,24 @@
       align-items: center;
       justify-content: flex-start;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      flex-direction: column; /* Alterado para colocar o slogan abaixo do título */
-      text-align: center; /* Centraliza o conteúdo */
+      flex-direction: column;
+      text-align: center;
     }
     header img {
       width: 80px;
-      margin-bottom: 10px; /* Ajustado para espaçar o ícone do slogan */
+      margin-right: 15px;
+      margin-bottom: 10px; /* Ajuste do espaço entre a folha e o título */
     }
     header h1 {
       margin: 0;
       font-size: 2rem;
+      display: inline-block;
+      margin-right: 10px; /* Ajuste para a folha e o título ficarem mais próximos */
     }
     header .slogan {
       font-style: italic;
-      font-size: 1.2rem;
-      margin-top: 10px; /* Ajustado para separar o slogan do título */
+      font-size: 1rem; /* Reduziu a fonte do slogan */
+      margin-top: 5px; /* Ajuste para separar o slogan do título */
     }
     header span {
       margin-left: auto;
@@ -90,8 +93,10 @@
 </head>
 <body>
   <header>
-    <img src="folha.png" alt="Ícone de folha" />
-    <h1>Despapelize</h1>
+    <div style="display: flex; align-items: center;">
+      <img src="folha.png" alt="Ícone de folha" />
+      <h1>Despapelize</h1>
+    </div>
     <div class="slogan">despapelize-se, liberte sua empresa da papelada.</div>
   </header>
   <div class="main">
