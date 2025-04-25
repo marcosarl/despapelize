@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Despapelize - Consultoria Paperless</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
@@ -17,31 +17,27 @@
       left: 0;
       width: 100%;
       z-index: 999;
-      background-color: #009688;
+      background-color: #00695c;
       color: white;
       padding: 20px;
-      text-align: center;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      width: 80px;
+      margin-right: 15px;
     }
     header h1 {
       margin: 0;
       font-size: 2rem;
-      display: flex;
-      align-items: center;
-    }
-    header img {
-      width: 80px;
-      height: auto;
-      margin-right: 10px;
     }
     .main {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      padding: 140px 20px 20px; /* Espaço para o header fixo */
+      padding: 140px 20px 20px; /* compensação para o header fixo */
     }
     .bloco {
       background-color: white;
@@ -82,7 +78,7 @@
 </head>
 <body>
   <header>
-    <img src="folha.png" alt="Folha Despapelize">
+    <img src="folha.png" alt="Ícone de folha" />
     <h1>Despapelize</h1>
   </header>
   <div class="main">
