@@ -22,22 +22,30 @@
       padding: 20px;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Centraliza o conteúdo */
+      align-items: flex-start; /* Alinha o conteúdo à esquerda */
       justify-content: center;
-      text-align: center; /* Centraliza o texto */
+      text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     header div {
       display: flex;
       align-items: center;
-      justify-content: center; /* Garante que a logo fique no meio */
+      justify-content: flex-start; /* Garante que a logo e o título fiquem à esquerda */
+      gap: 15px; /* Espaço entre a logo e o título */
+      padding-left: 20px; /* Adiciona um espaçamento à esquerda para a logo */
     }
     header img {
-      width: 80px;
+      width: 120px; /* Aumenta o tamanho da logo */
       margin-right: 15px;
     }
     header h1 {
-      display: none; /* Oculta o título do site */
+      margin: 0;
+      font-size: 2rem;
+    }
+    header .slogan {
+      font-style: italic;
+      font-size: 1rem;
+      margin-top: 10px;
     }
     .main {
       display: flex;
@@ -85,8 +93,10 @@
 <body>
   <header>
     <div>
-      <img src="logoajustado.png" alt="Logo Despapelize" /> <!-- Logo substituindo o título -->
+      <img src="logoajustado.png" alt="Logo Despapelize" />
+      <h1>Despapelize</h1>
     </div>
+    <div class="slogan">despapelize-se, liberte-se da papelada</div>
   </header>
   <div class="main">
     <div class="bloco">
