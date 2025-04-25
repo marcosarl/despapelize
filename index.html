@@ -8,17 +8,23 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5; /* Cinza Claro */
-      color: #333333; /* Cinza Escuro */
+      background-color: #f5f5f5;
+      color: #333;
     }
     header {
-      background-color: #009688; /* Verde Principal */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      background-color: #009688;
       color: white;
       padding: 20px;
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     header h1 {
       margin: 0;
@@ -35,7 +41,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      padding: 20px;
+      padding: 140px 20px 20px; /* Espaço para o header fixo */
     }
     .bloco {
       background-color: white;
@@ -47,10 +53,10 @@
       margin-bottom: 30px;
     }
     h2 {
-      color: #00796b; /* Verde Claro */
+      color: #00796b;
     }
     .cta-button {
-      background-color: #FF7043; /* Laranja Claro */
+      background-color: #00796b;
       color: white;
       padding: 10px 20px;
       text-decoration: none;
@@ -59,13 +65,10 @@
       margin-top: 10px;
     }
     footer {
-      background-color: #004d40; /* Verde Escuro */
+      background-color: #004d40;
       color: white;
       text-align: center;
       padding: 20px;
-    }
-    a:hover {
-      background-color: #80CBC4; /* Verde Claro */
     }
     @media (min-width: 992px) {
       .main {
@@ -79,7 +82,7 @@
 </head>
 <body>
   <header>
-    <img src="folha.png" alt="Folha Despapelize"> <!-- Imagem da folha -->
+    <img src="folha.png" alt="Folha Despapelize">
     <h1>Despapelize</h1>
   </header>
   <div class="main">
