@@ -12,67 +12,77 @@
       color: #333;
     }
     header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 999;
       background-color: #00695c;
       color: white;
       padding: 20px;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header div {
-      display: flex;
       align-items: center;
-      justify-content: flex-start;
-      gap: 15px;
-      padding-left: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
     header img {
-      width: 235px;
-      margin-right: 15px;
+      height: 50px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
     }
-    header .slogan {
-      font-style: italic;
-      font-size: 1rem;
-      margin-top: 10px;
+    .hero {
+      background-color: #00796b;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
     }
-    .main {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 140px 20px 20px;
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
-    .bloco {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    .hero .btn {
+      background-color: #fbc02d;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
     }
-    .section {
-      margin-bottom: 30px;
+    section {
+      padding: 40px 20px;
+      max-width: 960px;
+      margin: auto;
     }
     h2 {
       color: #00796b;
     }
-    .cta-button {
-      background-color: #00796b;
+    ul, ol {
+      padding-left: 20px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
       color: white;
       padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+    }
+    .whatsapp-float a {
+      color: white;
       text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 10px;
     }
     footer {
       background-color: #004d40;
@@ -80,94 +90,103 @@
       text-align: center;
       padding: 20px;
     }
-    @media (min-width: 992px) {
-      .main {
-        flex-direction: row;
-      }
-      .bloco {
-        width: 50%;
-      }
-    }
   </style>
 </head>
 <body>
   <header>
-    <div>
-      <img src="logoajustado.png" alt="Logo Despapelize" />
-    </div>
+    <img src="logoajustado.png" alt="Despapelize logo">
+    <nav>
+      <a href="#como">Como Funciona</a>
+      <a href="#para-quem">Para Quem</a>
+      <a href="#nossos-servicos">Serviços</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#casos-de-sucesso">Case de Sucesso</a>
+      <a href="#diagnostico">Contato</a>
+    </nav>
   </header>
-  <div class="main">
-    <div class="bloco">
-      <section class="section" id="quem-somos">
-        <h2>O que é a Despapelize?</h2>
-        <p>Somos uma startup focada em transformar a papelada das empresas em processos digitais eficientes, otimizando tempo e recursos.</p>
-        <p><strong>🔍 Diagnóstico → 📄 Digitalização → 🧠 Automação → 📈 Resultados</strong></p>
-      </section>
-      <section class="section" id="como-funciona">
-        <h2>Como funciona?</h2>
-        <ol>
-          <li><strong>Diagnóstico gratuito</strong> - Avaliamos os processos que ainda dependem de papel.</li>
-          <li><strong>Plano personalizado</strong> - Criamos um plano de digitalização e automação.</li>
-          <li><strong>Implantação completa</strong> - Aplicamos ferramentas digitais e treinamos sua equipe.</li>
-          <li><strong>Acompanhamento e suporte</strong> - Garantimos que o novo processo funcione de verdade.</li>
-        </ol>
-      </section>
-      <section class="section" id="para-quem">
-        <h2>Para quem é?</h2>
-        <ul>
-          <li>Escritórios jurídicos</li>
-          <li>Clínicas e consultórios</li>
-          <li>Empresas de RH</li>
-          <li>Setores administrativos e financeiros</li>
-          <li>Qualquer empresa que ainda imprime tudo!</li>
-        </ul>
-      </section>
-      <section class="section" id="nossos-servicos">
-        <h2>Nossos serviços</h2>
-        <ul>
-          <li>Eliminação da papelada e digitalização inteligente</li>
-          <li>Implantação de GEDs e formulários digitais</li>
-          <li>Automação de processos com ferramentas no-code</li>
-          <li>Assinaturas eletrônicas com validade jurídica</li>
-          <li>Treinamento e capacitação da equipe</li>
-          <li>Conformidade com a LGPD</li>
-        </ul>
-      </section>
-      <section class="section" id="beneficios">
-        <h2>Benefícios</h2>
-        <ul>
-          <li>Redução de custos com papel, impressão e armazenamento</li>
-          <li>Acesso rápido e seguro à informação</li>
-          <li>Processos mais ágeis e organizados</li>
-          <li>Menos burocracia e mais eficiência</li>
-          <li>Adequação à LGPD</li>
-        </ul>
-      </section>
-      <section class="section" id="diagnostico">
-        <h2>Solicite um diagnóstico gratuito</h2>
-        <p>Quer saber como a Despapelize pode ajudar sua empresa?</p>
-        <p>Clique no botão abaixo e fale com a gente pelo WhatsApp!</p>
-        <a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Solicitar diagnóstico gratuito</a>
-      </section>
+
+  <section class="hero">
+    <h1>Transforme seu escritório em uma operação sem papel</h1>
+    <a href="#diagnostico" class="btn">Solicitar Diagnóstico</a>
+  </section>
+
+  <section id="como">
+    <h2>Como funciona?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Diagnóstico gratuito</h3>
+        <p>Avaliamos os processos que ainda dependem de papel.</p>
+      </div>
+      <div class="card">
+        <h3>Plano personalizado</h3>
+        <p>Criamos um plano de digitalização e automação.</p>
+      </div>
+      <div class="card">
+        <h3>Implantação completa</h3>
+        <p>Aplicamos ferramentas digitais e treinamos sua equipe.</p>
+      </div>
+      <div class="card">
+        <h3>Acompanhamento</h3>
+        <p>Garantimos que o novo processo funcione de verdade.</p>
+      </div>
     </div>
-    <div class="bloco">
-      <section class="section" id="casos-de-sucesso">
-        <h2>Casos de Sucesso</h2>
-          <p><strong><em>Projeto “Escritório sem Papel”:</strong> uma iniciativa de transformação digital completa que eliminou a dependência de documentos físicos em mais de 90% em um grande escritório jurídico. Foram digitalizadas mais de <strong>5.000 pastas</strong> e aproximadamente <strong>1,5 milhão de páginas</strong>, o que resultou na <strong>eliminação de 1 tonelada de papel</strong> e na <strong>desativação total do arquivo físico</strong>. Essa ação não apenas gerou economia de espaço e custos com armazenamento, como também contribuiu para práticas mais sustentáveis e alinhadas à LGPD.</em></p>
-        <div style="text-align: center; margin-top: 20px;">
-          <img src="projeto10.png" alt="Imagem do Projeto Escritório sem Papel" style="max-width: 600px; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" />
-        </div>
-      </section>
-      <section class="section" id="blog">
-        <h2>Insights</h2>
-        <p><em>A forma como lidamos com documentos está evoluindo rapidamente. Hoje, a gestão documental não se limita ao armazenamento e organização, mas se conecta diretamente à análise de dados e à inteligência artificial (IA) para impulsionar decisões estratégicas.</em></p>
-        <p><em>Com IA, é possível automatizar a classificação, extração de informações e identificação de padrões em grandes volumes de documentos. Já a análise de dados transforma essas informações em insights valiosos, ajudando empresas a otimizarem processos, reduzirem riscos e melhorarem a governança corporativa.</em></p>
-        <p><em>O futuro da gestão da informação está na convergência dessas tecnologias. Como sua empresa está se preparando para essa transformação?</em></p>
-      </section>
+  </section>
+
+  <section id="para-quem">
+    <h2>Para quem é?</h2>
+    <ul>
+      <li>Escritórios jurídicos</li>
+      <li>Clínicas e consultórios</li>
+      <li>Empresas de RH</li>
+      <li>Setores administrativos e financeiros</li>
+      <li>Qualquer empresa que ainda imprime tudo!</li>
+    </ul>
+  </section>
+
+  <section id="nossos-servicos">
+    <h2>Nossos serviços</h2>
+    <ul>
+      <li>Eliminação da papelada e digitalização inteligente</li>
+      <li>Implantação de GEDs e formulários digitais</li>
+      <li>Automação de processos com ferramentas no-code</li>
+      <li>Assinaturas eletrônicas com validade jurídica</li>
+      <li>Treinamento e capacitação da equipe</li>
+      <li>Conformidade com a LGPD</li>
+    </ul>
+  </section>
+
+  <section id="beneficios">
+    <h2>Benefícios</h2>
+    <ul>
+      <li>Redução de custos com papel, impressão e armazenamento</li>
+      <li>Acesso rápido e seguro à informação</li>
+      <li>Processos mais ágeis e organizados</li>
+      <li>Menos burocracia e mais eficiência</li>
+      <li>Adequação à LGPD</li>
+    </ul>
+  </section>
+
+  <section id="casos-de-sucesso">
+    <h2>Case de Sucesso</h2>
+    <p><strong><em>Projeto “Escritório sem Papel”:</strong> uma iniciativa de transformação digital completa que eliminou a dependência de documentos físicos em mais de 90% em um grande escritório jurídico. Foram digitalizadas mais de <strong>5.000 pastas</strong> e aproximadamente <strong>1,5 milhão de páginas</strong>, o que resultou na <strong>eliminação de 1 tonelada de papel</strong> e na <strong>desativação total do arquivo físico</strong>.</em></p>
+    <div style="text-align: center; margin-top: 20px;">
+      <img src="projeto10.png" alt="Imagem do Projeto Escritório sem Papel" style="max-width: 600px; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" />
     </div>
+  </section>
+
+  <section id="diagnostico">
+    <h2>Solicite um diagnóstico gratuito</h2>
+    <p>Quer saber como a Despapelize pode ajudar sua empresa?</p>
+    <a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Fale pelo WhatsApp</a>
+  </section>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/5511964678773" target="_blank">WhatsApp</a>
   </div>
+
   <footer>
     <p>&copy; 2025 Despapelize - Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
+
