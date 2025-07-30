@@ -2,218 +2,102 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Despapelize - Consultoria Paperless</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-      background-color: #00695c;
-      color: white;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header div {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 15px;
-      padding-left: 20px;
-    }
-    header img {
-      width: 235px;
-      margin-right: 15px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header .slogan {
-      font-style: italic;
-      font-size: 1rem;
-      margin-top: 10px;
-    }
-    .hero {
-      background-color: #00796b;
-      color: white;
-      text-align: center;
-      padding: 120px 20px 40px;
-      margin-top: 80px;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .hero .btn {
-      background-color: #fbc02d;
-      color: black;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .main {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-    }
-    .bloco {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    h2 {
-      color: #00796b;
-    }
-    .cta-button {
-      background-color: #00796b;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 50px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      font-weight: bold;
-    }
-    .whatsapp-float a {
-      color: white;
-      text-decoration: none;
-    }
-    footer {
-      background-color: #004d40;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    @media (min-width: 992px) {
-      .main {
-        flex-direction: row;
-      }
-      .bloco {
-        width: 50%;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Despapelize - Digitalize sua empresa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <div>
-      <img src="logoajustado.png" alt="Logo Despapelize" />
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Despapelize</h1>
+      <a href="#diagnostico" class="bg-indigo-600 text-white px-4 py-2 rounded-xl hover:bg-indigo-700 transition">Solicitar Diagnóstico</a>
     </div>
   </header>
 
-  <section class="hero">
-    <h1>Transforme seu escritório em uma operação sem papel</h1>
-    <a href="#diagnostico" class="btn">Solicitar Diagnóstico</a>
+  <!-- Hero -->
+  <section class="bg-indigo-50 py-16">
+    <div class="max-w-5xl mx-auto text-center px-4">
+      <h2 class="text-4xl font-extrabold mb-4">Transforme sua papelada em eficiência digital</h2>
+      <p class="text-lg mb-6">Somos uma startup focada em transformar a papelada das empresas em processos digitais eficientes, otimizando tempo e recursos.</p>
+      <div class="text-3xl">🔍 Diagnóstico → 📄 Digitalização → 🧠 Automação → 📈 Resultados</div>
+    </div>
   </section>
 
-  <div class="main">
-    <div class="bloco">
-      <section class="section" id="quem-somos">
-        <h2>O que é a Despapelize?</h2>
-        <p>Somos uma startup focada em transformar a papelada das empresas em processos digitais eficientes, otimizando tempo e recursos.</p>
-        <p><strong>🔍 Diagnóstico → 📄 Digitalização → 🧠 Automação → 📈 Resultados</strong></p>
-      </section>
-      <section class="section" id="como-funciona">
-        <h2>Como funciona?</h2>
-        <ol>
-          <li><strong>Diagnóstico gratuito</strong> - Avaliamos os processos que ainda dependem de papel.</li>
-          <li><strong>Plano personalizado</strong> - Criamos um plano de digitalização e automação.</li>
-          <li><strong>Implantação completa</strong> - Aplicamos ferramentas digitais e treinamos sua equipe.</li>
-          <li><strong>Acompanhamento e suporte</strong> - Garantimos que o novo processo funcione de verdade.</li>
-        </ol>
-      </section>
-      <section class="section" id="para-quem">
-        <h2>Para quem é?</h2>
-        <ul>
-          <li>Escritórios jurídicos</li>
-          <li>Clínicas e consultórios</li>
-          <li>Empresas de RH</li>
-          <li>Setores administrativos e financeiros</li>
-          <li>Qualquer empresa que ainda imprime tudo!</li>
-        </ul>
-      </section>
-      <section class="section" id="nossos-servicos">
-        <h2>Nossos serviços</h2>
-        <ul>
+  <!-- Como funciona -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Como funciona?</h3>
+      <div class="grid md:grid-cols-4 gap-6 text-center">
+        <div><h4 class="font-semibold mb-2">🔍 Diagnóstico gratuito</h4><p>Avaliamos os processos que ainda dependem de papel.</p></div>
+        <div><h4 class="font-semibold mb-2">📝 Plano personalizado</h4><p>Criamos um plano de digitalização e automação.</p></div>
+        <div><h4 class="font-semibold mb-2">🚀 Implantação completa</h4><p>Aplicamos ferramentas digitais e treinamos sua equipe.</p></div>
+        <div><h4 class="font-semibold mb-2">📞 Acompanhamento</h4><p>Garantimos que o novo processo funcione de verdade.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para quem é -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Para quem é?</h3>
+      <ul class="grid md:grid-cols-3 gap-4 list-disc list-inside text-lg">
+        <li>Escritórios jurídicos</li>
+        <li>Clínicas e consultórios</li>
+        <li>Empresas de RH</li>
+        <li>Setores administrativos e financeiros</li>
+        <li>Qualquer empresa que ainda imprime tudo!</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Nossos serviços -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Nossos serviços</h3>
+      <div class="grid md:grid-cols-2 gap-6 text-lg">
+        <ul class="list-disc list-inside">
           <li>Eliminação da papelada e digitalização inteligente</li>
           <li>Implantação de GEDs e formulários digitais</li>
           <li>Automação de processos com ferramentas no-code</li>
+        </ul>
+        <ul class="list-disc list-inside">
           <li>Assinaturas eletrônicas com validade jurídica</li>
           <li>Treinamento e capacitação da equipe</li>
           <li>Conformidade com a LGPD</li>
         </ul>
-      </section>
-      <section class="section" id="beneficios">
-        <h2>Benefícios</h2>
-        <ul>
-          <li>Redução de custos com papel, impressão e armazenamento</li>
-          <li>Acesso rápido e seguro à informação</li>
-          <li>Processos mais ágeis e organizados</li>
-          <li>Menos burocracia e mais eficiência</li>
-          <li>Adequação à LGPD</li>
-        </ul>
-      </section>
-      <section class="section" id="diagnostico">
-        <h2>Solicite um diagnóstico gratuito</h2>
-        <p>Quer saber como a Despapelize pode ajudar sua empresa?</p>
-        <p>Clique no botão abaixo e fale com a gente pelo WhatsApp!</p>
-        <a class="cta-button" href="https://wa.me/5511964678773" target="_blank">Solicitar diagnóstico gratuito</a>
-      </section>
+      </div>
     </div>
-    <div class="bloco">
-      <section class="section" id="casos-de-sucesso">
-        <h2>Casos de Sucesso</h2>
-        <p><strong><em>Projeto “Escritório sem Papel”:</strong> uma iniciativa de transformação digital completa que eliminou a dependência de documentos físicos em mais de 90% em um grande escritório jurídico. Foram digitalizadas mais de <strong>5.000 pastas</strong> e aproximadamente <strong>1,5 milhão de páginas</strong>, o que resultou na <strong>eliminação de 1 tonelada de papel</strong> e na <strong>desativação total do arquivo físico</strong>. Essa ação não apenas gerou economia de espaço e custos com armazenamento, como também contribuiu para práticas mais sustentáveis e alinhadas à LGPD.</em></p>
-        <div style="text-align: center; margin-top: 20px;">
-          <img src="projeto10.png" alt="Imagem do Projeto Escritório sem Papel" style="max-width: 600px; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" />
-        </div>
-      </section>
-      <section class="section" id="blog">
-        <h2>Insights</h2>
-        <p><em>A forma como lidamos com documentos está evoluindo rapidamente. Hoje, a gestão documental não se limita ao armazenamento e organização, mas se conecta diretamente à análise de dados e à inteligência artificial (IA) para impulsionar decisões estratégicas.</em></p>
-        <p><em>Com IA, é possível automatizar a classificação, extração de informações e identificação de padrões em grandes volumes de documentos. Já a análise de dados transforma essas informações em insights valiosos, ajudando empresas a otimizarem processos, reduzirem riscos e melhorarem a governança corporativa.</em></p>
-        <p><em>O futuro da gestão da informação está na convergência dessas tecnologias. Como sua empresa está se preparando para essa transformação?</em></p>
-      </section>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="bg-indigo-100 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Benefícios</h3>
+      <ul class="grid md:grid-cols-2 gap-4 text-lg list-disc list-inside">
+        <li>Redução de custos com papel, impressão e armazenamento</li>
+        <li>Acesso rápido e seguro à informação</li>
+        <li>Processos mais ágeis e organizados</li>
+        <li>Menos burocracia e mais eficiência</li>
+        <li>Adequação à LGPD</li>
+      </ul>
     </div>
-  </div>
+  </section>
 
-  <div class="whatsapp-float">
-    <a href="https://wa.me/5511964678773" target="_blank">WhatsApp</a>
-  </div>
+  <!-- CTA -->
+  <section id="diagnostico" class="py-16 bg-white text-center">
+    <h3 class="text-3xl font-bold mb-4">Solicite um diagnóstico gratuito</h3>
+    <p class="mb-6 text-lg">Quer saber como a Despapelize pode ajudar sua empresa?</p>
+    <a href="https://wa.me/seunumero" target="_blank" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full text-lg hover:bg-green-700 transition">
+      📲 Fale com a gente pelo WhatsApp
+    </a>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Despapelize - Todos os direitos reservados.</p>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+    © 2025 Despapelize. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
